@@ -1,0 +1,373 @@
+
+
+/* blinker-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/lib/font/blinker-v13-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-200 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/lib/font/blinker-v13-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/lib/font/blinker-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/lib/font/blinker-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/lib/font/blinker-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/lib/font/blinker-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/lib/font/blinker-v13-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* blinker-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Blinker';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/lib/font/blinker-v13-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+body {
+    background-color: #f0f0f0;
+    background-size: cover;
+    font-family: "Blinker";
+}
+section {
+    margin-left: 32.8vw;
+    margin-top: 3.3vw;
+}
+.form-div {
+    background-color: #f0f0f0;
+    width: 33vw;
+    height: 44vw;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2vw rgba(0,0,0,0.4);
+}
+
+.foto img {
+    width: 20%;
+    padding-top: 3vw;
+}
+
+.register-form {
+    text-align: center;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.input-div {
+    margin-top: 1vw;
+}
+
+.input-div input::placeholder {
+  font-size: 1.1vw;
+  font-family: "Blinker";
+}
+
+#username, #email, #password, #confirm {
+    border-radius: 2vw;
+    border: none;
+    width: 17vw;
+    height: 3vw;
+    text-align: center;
+    border: 0.01vw solid #cfcece;
+}
+
+#femaleBtn {
+    margin-left: 4vw;
+}
+
+/* radiobutton */
+:focus {
+    outline: 0;
+    border-color: #dedede;
+    box-shadow: 0 0 0 4px #d8d8d8;
+  }
+  
+  .input-div div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .input-div input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 0.1vw;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 0.1vw;
+  }
+  
+  .input-div input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #c7c7c7;
+    background-color: #dadada;
+    z-index: 1;
+    color: #575757;
+  }
+  
+  .material-radio span {
+    margin-top: 1vw;
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375vw .5vw;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #bbbbbb;
+    letter-spacing: .05em;
+    color: #303030;
+    text-align: center;
+    transition: background-color .5s ease;
+    font-size: 1.3vw;
+  }
+  
+  .material-radio:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  .material-radio:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+  
+
+/* checkbox */
+.material-check {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    color: #777777;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 2vw;
+  }
+  
+  .material-check input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid #989696;
+    border-radius: 0.4vw;
+    transition: all 0.3s;
+
+  }
+
+  .text-check {
+    font-size: 1vw;
+    margin-left:  1vw;
+    font-weight: 400;
+  }
+
+  #error-msg {
+    font-size: 1vw;
+  }
+  
+  .material-check input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #a8a8a8;
+    border-color: #c8c8c8;
+  }
+  
+  .material-check input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 0.2vw;
+    left: 0.6vw;
+    width: 0.4vw;
+    height: 1vw;
+    border: solid rgb(226, 226, 226);
+    border-width: 0 0.2vw 0.2vw 0;
+    transform: rotate(45deg);
+  }
+  
+  .material-check input[type="checkbox"]:focus ~ .checkmark {
+    box-shadow: 0 0 0 2px #85858565;
+  }
+  
+  .material-check:hover input[type="checkbox"] ~ .checkmark {
+    border-color: #d2d2d2;
+  }
+  
+  .material-check input[type="checkbox"]:disabled ~ .checkmark {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .material-check input[type="checkbox"]:disabled ~ .checkmark:hover {
+    border-color: #4d4d4d;
+  }
+
+/* Button */
+.button-sub {
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    border: 2px solid #bababa;
+    padding: 0.6vw 3.3vw;
+    font-size: 1.4vw;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 2vw;
+  }
+  
+  .button-sub:hover {
+    color: white;
+    transition: all 0.4s;
+    background-color: rgb(78, 78, 78);
+  }
+  
+  .button-sub::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(78, 78, 78);
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .button-sub:hover::before {
+    width: 160%;
+  }
+
+
+@media (width <= 1030px) {
+    section {
+        margin-left: 29.8vw;
+        margin-top: 7.3vw;
+    }
+    .form-div {
+        background-color: #f0f0f0;
+        width: 42vw;
+        height: 49vw;
+        text-align: center;
+        border-radius: 2vw;
+        box-shadow: 0 1vw 2vw rgba(0,0,0,0.4);
+    }
+
+    .material-check {
+      margin-left: 6vw;
+      margin-top: 2vw;
+    }
+
+    .checkmark {
+      width: 2vw;
+      height: 2vw;
+  
+    }
+  
+    .text-check {
+      font-size: 1vw;
+      margin-left:  1vw;
+      font-weight: 400;
+    }
+
+    .errormsg {
+      margin-top: 3vw;
+    }
+
+    .button-sub {
+      margin-top: 1vw;
+    }
+}
+
+@media (width <= 900px) {
+  .material-radio span {
+    font-size: 1.3vw;
+  }
+  
+  .button-sub {
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    border: 2px solid #bababa;
+    padding: 0.4vw 2.8vw;
+    font-size: 1.4vw;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+    border-radius: 2vw;
+  }
+
+  section {
+    margin-left: 27.4vw;
+    margin-top: 12.3vw;
+}
+}
+
+@media (width <=710px) {
+  .material-check {
+    margin-left: 6vw;
+    margin-top: 2vw;
+  }
+  section {
+    margin-left: 25.4vw;
+    margin-top: 25.3vw;
+  }
+
+  .form-div {
+    background-color: #f0f0f0;
+    width: 40vw;
+    height: 50vw;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 0 1vw 2vw rgba(0,0,0,0.4);
+}
+}
+
+
+
